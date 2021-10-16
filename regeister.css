@@ -1,0 +1,251 @@
+body{
+	font-family: sans-serif;
+	height: 100vh;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box
+}
+.header{
+	width: 100%;
+	height: 800px;
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url('https://www.daxx.com/uploads/staff120200421.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+.header h1{
+	font-size: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	color: floralwhite;
+	color: transparent;
+	-webkit-text-stroke: 1px #fff;
+	text-shadow: 3px 2px 3px tomato;
+}
+.header p{
+  text-align: center;
+  color: floralwhite;
+}
+.header > .center{
+	text-align: center;
+	margin-top: 30px;
+}
+.header .center button{
+	font-size: 18px;
+	color: floralwhite;
+	background: transparent;
+	padding: 10px 25px;
+	position: relative;
+	overflow: hidden;
+}
+.header .center a{
+	color: floralwhite;
+	text-decoration: none;
+}
+.header > .center button::before{
+	content: '';
+	width: 100%;
+	height: 50%;
+	background-color: white;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	transform:translate(-100%) rotate(45deg);
+	transition: 0.3s ease-in;
+}
+.header > .center button:hover::before{
+	transform: translate(100%) rotate(45deg);
+}
+.header > .center button:hover{
+	border-color: blue;
+}
+.header > .middle{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.middle{
+	margin-top: 100px;
+}
+.header > .middle .login{
+	width: 600px;
+	height: 500px;
+	background-color: #343536;
+	box-shadow: -3px 3px 3px white;
+}
+
+.header > .middle .login h2{
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 30px;
+}
+.login form{
+	padding: 30px 40px;
+}
+.login form .control{
+	width: 100%;
+	padding: 10px;
+	font-size: 20px;
+	color: blue;
+	margin-bottom: 30px;
+	border: 0;
+	border-bottom: 1px solid tomato;
+	background: transparent;
+}
+.login form .control:focus{
+	outline: none;
+}
+.login form label{
+	color: #fff;
+	margin-left: 10px;
+	font-size: 18px;
+}
+.login form .me{
+	padding: 10px;
+}
+.login .btn,.sign-up .btn{
+	padding: 10px 25px;
+	background: transparent;
+	font-size: 18px;
+	color: #fff;
+	margin-top: 60px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+.login .btn::before,.sign-up .btn::before{
+   content: '';
+   width: 100%;
+   height: 50%;
+   background-color: tomato;
+
+   position: absolute;
+   top: 0;
+   left: 0;
+
+   transform:translate(-100%) rotate(45deg);
+   transition: all 0.3s ease;
+
+}
+.login .btn:hover::before,.sign-up .btn:hover::before{
+	transform:translate(100%) rotate(45deg);
+}
+.btn:hover{
+	border: 0;
+}
+.sign-up{
+	width: 600px;
+	height: 500px;
+	background-color: floralwhite;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+.sign-up h2{
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #555;
+	padding-top: 25px;
+	padding-left: 33px;
+}
+.sign-up p{
+	color: #555;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+.sign-up form{
+	padding: 30px 40px;
+}
+.sign-up .control{
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  color: tomato;
+  border: 0;
+  border-bottom: 1px solid #555;
+  background: transparent;
+  margin-bottom: 30px;
+}
+.sign-up .control:focus{
+	outline: none;
+}
+.sign-up me{
+	padding: 10px;
+}
+.sign-up form label{
+	margin-left: 10px;
+	font-size: 18px;
+	color: #555;
+}
+.sign-up .btn{
+	color: #555;
+	margin-bottom: 20px;
+}
+
+.login a{
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	transition: all 0.5s ease-in;
+}
+.login .a3,.sign-up .a3{
+  margin-left: 30px;
+}
+.login a:hover{
+	color: tomato;
+}
+
+.login .btn2{
+	width: 100%;
+	font-size: 18px;
+	color: #444;
+	border-radius: 25px;
+	padding: 10px;
+	margin-top: 10px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+}
+.login .btn2::before,.sign-up .btn2::before{
+	content: '';
+	width: 30%;
+	height: 100%;
+	background-color: #05ddfa;
+	border-radius: 25px;
+
+	position: absolute;
+	top: 0;
+	left:0;
+
+  transform: translate(-100%);
+	transition: all 0.5s ease-in;
+}
+.login .btn2:hover::before,.sign-up .btn2:hover::before{
+  transform: translate(233%);
+}
+.sign-up a{
+	color: black;
+	font-size: 30px;
+	transition: all 0.3s ease-in;
+}
+.sign-up a:hover{
+	color: #3ff013;
+}
+
+.sign-up .btn2{
+  width: 100%;
+	font-size: 18px;
+	color: #fff;
+	border-radius: 25px;
+	background-color: gray;
+	padding: 10px;
+	margin-top: 10px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+}
